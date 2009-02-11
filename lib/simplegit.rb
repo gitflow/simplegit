@@ -9,6 +9,14 @@ class SimpleGit
     command("git status")
   end
 
+  def staged
+    command("git diff --staged")
+  end
+
+  def commit(message)
+    command("git commit -m '#{message}'")
+  end
+
   def add(path)
     command("git add #{path}")
   end
