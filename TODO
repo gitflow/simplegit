@@ -2,6 +2,8 @@ Git Functions:
 * add 
 * remove
 * commit
+* commit
+* commit
 * rebase
 * merge
 * status
