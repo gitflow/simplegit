@@ -9,6 +9,10 @@ class SimpleGit
     command("git show #{treeish}")
   end
 
+  def clone(url)
+    command("git clone #{url}")
+  end
+
   private
   
     def command(git_cmd)
