@@ -13,6 +13,10 @@ class SimpleGit
     command("git checkout #{branch}")
   end
 
+  def branch(branch)
+    command("git branch #{branch}")
+  end
+
   private
   
     def command(git_cmd)
