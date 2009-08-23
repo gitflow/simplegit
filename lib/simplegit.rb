@@ -8,6 +8,10 @@ class SimpleGit
   def show(treeish = 'master')
     command("git show #{treeish}")
   end
+  
+  def checkout(branch)
+    command("git checkout #{branch}")
+  end
 
   private
   
