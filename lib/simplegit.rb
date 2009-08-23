@@ -5,6 +5,10 @@ class SimpleGit
     @git_dir = File.expand_path(git_dir)
   end
   
+  def branch(branch)
+    command("git branch #{branch}")
+  end
+
   def show(treeish = 'master')
     command("git show #{treeish}")
   end
