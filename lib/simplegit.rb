@@ -9,6 +9,10 @@ class SimpleGit
     command("git branch #{branch}")
   end
 
+  def delete_branch(branch)
+    command("git branch -d #{branch}")
+  end
+
   def show(treeish = 'master')
     command("git show #{treeish}")
   end
